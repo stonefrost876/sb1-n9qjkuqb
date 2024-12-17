@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="PhotoManager" class="action-bar">
+    <ActionItem ios.position="right" android.position="actionBar">
+      <Label text="&#xf013;" class="fas" fontSize="20" />
+    </ActionItem>
+  </ActionBar>
+
+  <GridLayout>
+    <ScrollView visibility="{{ isLoading ? 'collapse' : 'visible' }}">
+      <StackLayout class="p-4">
+        <Label text="{{ error }}" class="text-red-500" visibility="{{ error ? 'visible' : 'collapse' }}" />
+        
+        <GridLayout rows="auto, auto" columns="*, *" class="mb-4">
+          <Label text="Welcome back!" class="text-2xl font-bold" row="0" col="0" colSpan="2" />
+          <Label text="{{ todayDate }}" class="text-gray-600" row="1" col="0" colSpan="2" />
+        </GridLayout>
+
+        <ns:TodaySchedule appointments="{{ todayAppointments }}" />
+        
+        <GridLayout rows="auto" columns="*, *" class="mb-4">
+          <Button text="New Booking" tap="{{ onNewBooking }}" class="btn btn-primary m-1" row="0" col="0" />
+          <Button text="Quick Note" tap="{{ onQuickNote }}" class="btn btn-secondary m-1" row="0" col="1" />
+        </GridLayout>
+
+        <ns:RecentActivity activities="{{ recentActivity }}" />
+      </StackLayout>
+    </ScrollView>
+
+    <ActivityIndicator busy="{{ isLoading }}" />
+  </GridLayout>
+</Page>

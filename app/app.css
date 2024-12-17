@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'shared/styles/buttons.css';
+@import 'shared/styles/cards.css';
+
+.action-bar {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+
+.tab-view {
+  selected-tab-text-color: #4a5568;
+  tab-text-color: #718096;
+  tab-background-color: #ffffff;
+}

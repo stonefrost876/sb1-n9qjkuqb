@@ -1,0 +1,16 @@
+<Frame defaultPage="views/home/home-page">
+  <TabView androidTabsPosition="bottom" selectedTabTextColor="#4a5568" tabTextColor="#718096">
+    <TabViewItem title="Home" iconSource="font://&#xf015;" className="fas">
+      <Frame defaultPage="views/home/home-page" />
+    </TabViewItem>
+    <TabViewItem title="Calendar" iconSource="font://&#xf073;" className="fas">
+      <Frame defaultPage="views/calendar/calendar-page" />
+    </TabViewItem>
+    <TabViewItem title="Clients" iconSource="font://&#xf0c0;" className="fas">
+      <Frame defaultPage="views/clients/clients-page" />
+    </TabViewItem>
+    <TabViewItem title="Payments" iconSource="font://&#xf155;" className="fas">
+      <Frame defaultPage="views/payments/payments-page" />
+    </TabViewItem>
+  </TabView>
+</Frame>

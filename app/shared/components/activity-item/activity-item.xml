@@ -1,0 +1,7 @@
+<GridLayout columns="auto, *" class="p-2">
+  <Label text="{{ icon }}" class="fas text-gray-600" col="0" />
+  <StackLayout col="1" class="ml-2">
+    <Label text="{{ description }}" textWrap="true" />
+    <Label text="{{ time }}" class="text-gray-500" />
+  </StackLayout>
+</GridLayout>

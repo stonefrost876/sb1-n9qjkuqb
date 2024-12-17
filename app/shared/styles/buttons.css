@@ -1,0 +1,13 @@
+.btn {
+  @apply font-semibold py-2 px-4 rounded-lg;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #718096;
+  color: #ffffff;
+}

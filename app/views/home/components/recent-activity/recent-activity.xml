@@ -1,0 +1,8 @@
+<StackLayout class="card">
+  <Label text="Recent Activity" class="text-xl font-semibold mb-2" />
+  <ListView items="{{ activities }}" height="200">
+    <ListView.itemTemplate>
+      <ns:ActivityItem />
+    </ListView.itemTemplate>
+  </ListView>
+</StackLayout>

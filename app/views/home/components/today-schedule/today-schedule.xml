@@ -1,0 +1,8 @@
+<GridLayout rows="auto, auto" columns="*, *" class="mb-4">
+  <Label text="Today's Schedule" class="text-xl font-semibold mb-2" row="0" col="0" colSpan="2" />
+  <ListView items="{{ appointments }}" row="1" col="0" colSpan="2" class="list-group">
+    <ListView.itemTemplate>
+      <ns:AppointmentCard />
+    </ListView.itemTemplate>
+  </ListView>
+</GridLayout>
